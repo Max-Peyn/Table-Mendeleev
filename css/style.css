@@ -28,7 +28,7 @@
     grid-template-columns: repeat(15, 63px);
     grid-template-rows: repeat(2, 63px);
     gap: 4px;
-    margin-top: 50px;
+    margin-top: 40px;
     /* margin-left: 144px; */
 }
 .halogen{
@@ -104,34 +104,42 @@
 .non-metal .element{
     color: #ef6191;
     border: 2px solid #ef6191;
+    transition: 0.2s linear;
 }
 .halogen .element{
     color: #4896d4;
     border: 2px solid #4896d4;
+    transition: 0.2s linear;
 }
 .alkali-metals .element{
-    color: #ea5044;
-    border: 2px solid #ea5044;
+    color: #d2483e;
+    border: 2px solid #d2483e;
+    transition: 0.2s linear;
 }
 .alkaline-earth-metal .element{
     color: #f48325;
     border: 2px solid #f48325;
+    transition: 0.2s linear;
 }
 .transition-metal .element {
     color: #fcde4c;
     border: 2px solid #fcde4c;
+    transition: 0.2s linear;
 }
 .metaloid .element {
     color: #20a786;
     border: 2px solid #20a786;
+    transition: 0.2s linear;
 }
 .metal .element {
     color: #5fc778;
     border: 2px solid #5fc778;
+    transition: 0.2s linear;
 }
 .noble-gas .element{
     color: #8f65a4;
     border: 2px solid #8f65a4;
+    transition: 0.2s linear;
 }
 .Lanth-actin .element{
     color: #98bfe6;
@@ -150,10 +158,12 @@
 .lanthanoid .element{
     color: #98bfe6;
     border: 2px solid #98bfe6;
+    transition: 0.2s linear;
 }
 .actinoid .element{
     color: #50edb8;
     border: 2px solid #50edb8;
+    transition: 0.2s linear;
 }
 .name-table{
     width: 100%;
@@ -167,5 +177,165 @@
     text-align: center;
 }
 
+/* hover effects */
 
+.non-metal .element:hover{
+    background: #ef6191;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #ef6191,
+                0 0 8px #ef6191,
+                0 0 16px #ef6191,
+                0 0 32px #ef6191;
+    border-color: #ef6191;
+}
+.non-metal .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.non-metal .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.alkali-metals .element:hover{
+    background: #ea5044;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #ea5044,
+                0 0 8px #ea5044,
+                0 0 16px #ea5044,
+                0 0 32px #ea5044;
+    border-color: #ea5044;
+}
+.alkali-metals .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.alkali-metals .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.alkaline-earth-metal .element:hover{
+    background: #f48325;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #f48325,
+                0 0 8px #f48325,
+                0 0 16px #f48325,
+                0 0 32px #f48325;
+    border-color: #f48325;
+}
+.alkaline-earth-metal .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.alkaline-earth-metal .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.transition-metal .element:hover{
+    background: #fcde4c;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #fcde4c,
+                0 0 8px #fcde4c,
+                0 0 16px #fcde4c,
+                0 0 32px #fcde4c;
+    border-color: #fcde4c;
+}
+.transition-metal .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.transition-metal .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.metal .element:hover{
+    background: #5fc778;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #5fc778,
+                0 0 8px #5fc778,
+                0 0 16px #5fc778,
+                0 0 32px #5fc778;
+    border-color: #5fc778;
+}
+.metal .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.metal .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.metaloid .element:hover{
+    background: #20a786;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #20a786,
+                0 0 8px #20a786,
+                0 0 16px #20a786,
+                0 0 32px #20a786;
+    border-color: #20a786;
+}
+.metaloid .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.metaloid .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.halogen .element:hover{
+    background: #4896d4;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #4896d4,
+                0 0 8px #4896d4,
+                0 0 16px #4896d4,
+                0 0 32px #4896d4;
+    border-color: #4896d4;
+}
+.halogen .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.halogen .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.noble-gas .element:hover{
+    background: #8f65a4;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #8f65a4,
+                0 0 8px #8f65a4,
+                0 0 16px #8f65a4,
+                0 0 32px #8f65a4;
+    border-color: #8f65a4;
+}
+.noble-gas .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.noble-gas .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.lanthanoid .element:hover{
+    background: #98bfe6;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #98bfe6,
+                0 0 8px #98bfe6,
+                0 0 16px #98bfe6,
+                0 0 32px #98bfe6;
+    border-color: #98bfe6;
+}
+.lanthanoid .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.lanthanoid .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.actinoid .element:hover{
+    background: #50edb8;
+    color: #1a1a1a;
+    box-shadow: 0 0 4px #50edb8,
+                0 0 8px #50edb8,
+                0 0 16px #50edb8,
+                0 0 32px #50edb8;
+    border-color: #50edb8;
+}
+.actinoid .element:hover .atomicWidth{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.actinoid .element:hover .number{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
 
