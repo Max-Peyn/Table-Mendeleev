@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+}
+.main-elements{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(18, 63px);
+    grid-template-rows: repeat(7, 63px);
+    gap: 4px;
+    align-self: center;
+    /* border: 2px solid white; */
+}
+.footer-elements{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(15, 63px);
+    grid-template-rows: repeat(2, 63px);
+    gap: 4px;
+    margin-top: 50px;
+    /* margin-left: 144px; */
+}
+.halogen{
+    display: contents;
+}
+.non-metal{
+    display: contents;
+}
+.alkali-metals{
+    display: contents;
+}
+.alkaline-earth-metal{
+    display: contents;
+}
+.transition-metal{
+    display: contents;
+}
+.metaloid{
+    display: contents;
+}
+.metal{
+    display: contents;
+}
+.noble-gas{
+    display: contents;
+}
+.Lanth-actin{
+    display: contents;
+}
+.lanthanoid{
+    display: contents;
+}
+.actinoid{
+    display: contents;
+}
+.element{
+    max-width: 63px;
+    max-height: 63px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.element .number{
+    font-size: 0.65em;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: white;
+}
+.element .symbolElement{
+    font-size: 1.8em;
+    font-weight: 700;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.element .nameElement{
+    font-size: .63em;
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.element .atomicWidth{
+    font-size: .6em;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0);
+}
+.non-metal .element{
+    color: #ef6191;
+    border: 2px solid #ef6191;
+}
+.halogen .element{
+    color: #4896d4;
+    border: 2px solid #4896d4;
+}
+.alkali-metals .element{
+    color: #ea5044;
+    border: 2px solid #ea5044;
+}
+.alkaline-earth-metal .element{
+    color: #f48325;
+    border: 2px solid #f48325;
+}
+.transition-metal .element {
+    color: #fcde4c;
+    border: 2px solid #fcde4c;
+}
+.metaloid .element {
+    color: #20a786;
+    border: 2px solid #20a786;
+}
+.metal .element {
+    color: #5fc778;
+    border: 2px solid #5fc778;
+}
+.noble-gas .element{
+    color: #8f65a4;
+    border: 2px solid #8f65a4;
+}
+.Lanth-actin .element{
+    color: #98bfe6;
+    border: 2px solid #98bfe6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .65em;
+    gap: 5px;
+}
+.Lanth-actin .element:nth-child(2){
+    color: #50edb8;
+    border: 2px solid #50edb8;
+}
+.lanthanoid .element{
+    color: #98bfe6;
+    border: 2px solid #98bfe6;
+}
+.actinoid .element{
+    color: #50edb8;
+    border: 2px solid #50edb8;
+}
+.name-table{
+    width: 100%;
+}
+.table-meneleev{
+    color: white;
+    font-weight: 100;
+    font-size: 5em;
+    word-spacing: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+
+
