@@ -48,6 +48,12 @@ window.addEventListener('resize', ()=>{
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgba(${r},${g},${b},0.6)`;
+}
 
 function regenerateStars(){
     stars = [];
@@ -59,6 +65,7 @@ function regenerateStars(){
             radius: Math.random()*10,
             vx: Math.random() * 10 - 5,
             vy: Math.random() * 10 - 5,
+            color: randomColor(),
         });
     }
 }
@@ -81,27 +88,26 @@ for (let i = 0; i < x; i++) {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation="lighter"
-let color = 'yellow'
     let blur = 100;
     for (let i = 0; i<stars.length; i++) {
         let star = stars[i];
-        ctx.fillStyle = "#FFFF00";
+        ctx.fillStyle = star.color;
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius*2, 0, Math.PI * 2);
         ctx.fill();
         ctx.beginPath();
         ctx.filter = `blur(${star.radius}px)`;
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = star.color;
         ctx.arc(star.x, star.y, star.radius*2, 0, Math.PI * 2);
         ctx.fill();
         ctx.beginPath();
-        ctx.fillStyle = `${color}`;
+        ctx.fillStyle = star.color;
         ctx.filter = `blur(${blur}px)`;
         ctx.arc(star.x, star.y, star.radius*2, 0, Math.PI * 2);
         ctx.fill();
         ctx.beginPath();
         ctx.filter = `blur(${blur/5}px)`;
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = star.color;
         ctx.arc(star.x, star.y, star.radius*2, 0, Math.PI * 2);
         ctx.fill();
     }
