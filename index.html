@@ -4,98 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/position-element.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="name-table">
-            <h1 class="table-meneleev">Periodic Table Of The Elements</h1>
+            <h1>Periodic Table Of The Elements</h1>
         </div>
+        
         <div class="main-elements">
-            <div class="non-metal">
+            <div class="selected-elem">
                 <div class="element">
                     <p class="number">1</p>
                     <h1 class="symbolElement">H</h1>
                     <p class="nameElement">Hydrogen</p>
                     <p class="atomicWidth">1,0079</p>
                 </div>
-                <div class="element">
-                    <p class="number">6</p>
-                    <h1 class="symbolElement">C</h1>
-                    <p class="nameElement">Carbon</p>
-                    <p class="atomicWidth">12,011</p>
-                </div>
-                <div class="element">
-                    <p class="number">7</p>
-                    <h1 class="symbolElement">N</h1>
-                    <p class="nameElement">Nitrogen</p>
-                    <p class="atomicWidth">14,007</p>
-                </div>
-                <div class="element">
-                    <p class="number">8</p>
-                    <h1 class="symbolElement">O</h1>
-                    <p class="nameElement">Oxygen</p>
-                    <p class="atomicWidth">15,999</p>
-                </div>
-                <div class="element">
-                    <p class="number">15</p>
-                    <h1 class="symbolElement">P</h1>
-                    <p class="nameElement">Phosphorus</p>
-                    <p class="atomicWidth">30,974</p>
-                </div>
-                <div class="element">
-                    <p class="number">16</p>
-                    <h1 class="symbolElement">S</h1>
-                    <p class="nameElement">Sulfur</p>
-                    <p class="atomicWidth">32,066</p>
-                </div>
-                <div class="element">
-                    <p class="number">34</p>
-                    <h1 class="symbolElement">Se</h1>
-                    <p class="nameElement">Selenium</p>
-                    <p class="atomicWidth">78,971</p>
-                </div>
             </div>
-            <div class="halogen">
+            <div class="col-1">
                 <div class="element">
-                    <p class="number">9</p>
-                    <h1 class="symbolElement">F</h1>
-                    <p class="nameElement">Fluorine</p>
-                    <p class="atomicWidth">18,998</p>
+                    <p class="number">1</p>
+                    <h1 class="symbolElement">H</h1>
+                    <p class="nameElement">Hydrogen</p>
+                    <p class="atomicWidth">1,0079</p>
                 </div>
-                <div class="element">
-                    <p class="number">17</p>
-                    <h1 class="symbolElement">Cl</h1>
-                    <p class="nameElement">Chlorine</p>
-                    <p class="atomicWidth">35,45</p>
-                </div>
-                <div class="element">
-                    <p class="number">35</p>
-                    <h1 class="symbolElement">Br</h1>
-                    <p class="nameElement">Bromine</p>
-                    <p class="atomicWidth">79,904</p>
-                </div>
-                <div class="element">
-                    <p class="number">53</p>
-                    <h1 class="symbolElement">I</h1>
-                    <p class="nameElement">Iodine</p>
-                    <p class="atomicWidth">126,904</p>
-                </div>
-                <div class="element">
-                    <p class="number">85</p>
-                    <h1 class="symbolElement">At</h1>
-                    <p class="nameElement">Astatine</p>
-                    <p class="atomicWidth">(210)</p>
-                </div>
-                <div class="element">
-                    <p class="number">117</p>
-                    <h1 class="symbolElement">Ts</h1>
-                    <p class="nameElement">Tennesine</p>
-                    <p class="atomicWidth">(294)</p>
-                </div>
-            </div>
-            <div class="alkali-metals">
                 <div class="element">
                     <p class="number">3</p>
                     <h1 class="symbolElement">Li</h1>
@@ -133,7 +65,7 @@
                     <p class="atomicWidth">(223)</p>
                 </div>
             </div>
-            <div class="alkaline-earth-metal">
+            <div class="col-2">
                 <div class="element">
                     <p class="number">4</p>
                     <h1 class="symbolElement">Be</h1>
@@ -171,7 +103,7 @@
                     <p class="atomicWidth">(226)</p>
                 </div>
             </div>
-            <div class="transition-metal">
+            <div class="col-3">
                 <div class="element">
                     <p class="number">21</p>
                     <h1 class="symbolElement">Sc</h1>
@@ -292,6 +224,10 @@
                     <p class="nameElement">Cadmium</p>
                     <p class="atomicWidth">112,414</p>
                 </div>
+                <div class="element aqua">
+                    <p class="number-elem">57-71</p>
+                    <p class="nameElem">Lanthanoid</p>
+                </div>
                 <div class="element">
                     <p class="number">72</p>
                     <h1 class="symbolElement">Hf</h1>
@@ -345,6 +281,10 @@
                     <h1 class="symbolElement">Hg</h1>
                     <p class="nameElement">Mercury</p>
                     <p class="atomicWidth">200,59</p>
+                </div>
+                <div class="element turquoise">
+                    <p class="number-elem">89-103</p>
+                    <p class="nameElem">Actinide</p>
                 </div>
                 <div class="element">
                     <p class="number">104</p>
@@ -401,119 +341,197 @@
                     <p class="atomicWidth">(285)</p>
                 </div>
             </div>
-            <div class="metaloid">
-                <div class="element">
+            <div class="col-4">
+                <div class="element darkgreen">
                     <p class="number">5</p>
                     <h1 class="symbolElement">B</h1>
                     <p class="nameElement">Boron</p>
                     <p class="atomicWidth">10,81</p>
                 </div>
-                <div class="element">
-                    <p class="number">14</p>
-                    <h1 class="symbolElement">Si</h1>
-                    <p class="nameElement">Silcon</p>
-                    <p class="atomicWidth">28,085</p>
-                </div>
-                <div class="element">
-                    <p class="number">32</p>
-                    <h1 class="symbolElement">Ge</h1>
-                    <p class="nameElement">Germanium</p>
-                    <p class="atomicWidth">72,63</p>
-                </div>
-                <div class="element">
-                    <p class="number">33</p>
-                    <h1 class="symbolElement">As</h1>
-                    <p class="nameElement">Arsenic</p>
-                    <p class="atomicWidth">74,921</p>
-                </div>
-                <div class="element">
-                    <p class="number">51</p>
-                    <h1 class="symbolElement">Sb</h1>
-                    <p class="nameElement">Antimony</p>
-                    <p class="atomicWidth">121,760</p>
-                </div>
-                <div class="element">
-                    <p class="number">52</p>
-                    <h1 class="symbolElement">Te</h1>
-                    <p class="nameElement">Tellurium</p>
-                    <p class="atomicWidth">127,60</p>
-                </div>
-                <div class="element">
-                    <p class="number">84</p>
-                    <h1 class="symbolElement">Po</h1>
-                    <p class="nameElement">Polonium</p>
-                    <p class="atomicWidth">(209)</p>
-                </div>
-            </div>
-            <div class="metal">
-                <div class="element">
+                <div class="element lightgreen">
                     <p class="number">13</p>
                     <h1 class="symbolElement">Al</h1>
                     <p class="nameElement">Aluminium</p>
                     <p class="atomicWidth">26,981</p>
                 </div>
-                <div class="element">
+                <div class="element lightgreen">
                     <p class="number">31</p>
                     <h1 class="symbolElement">Ga</h1>
                     <p class="nameElement">Gallium</p>
                     <p class="atomicWidth">69,723</p>
                 </div>
-                <div class="element">
+                <div class="element lightgreen">
                     <p class="number">49</p>
                     <h1 class="symbolElement">In</h1>
                     <p class="nameElement">Indium</p>
                     <p class="atomicWidth">114,818</p>
                 </div>
-                <div class="element">
-                    <p class="number">50</p>
-                    <h1 class="symbolElement">Sn</h1>
-                    <p class="nameElement">Tin</p>
-                    <p class="atomicWidth">118,710</p>
-                </div>
-                <div class="element">
+                <div class="element lightgreen">
                     <p class="number">81</p>
                     <h1 class="symbolElement">Ti</h1>
                     <p class="nameElement">Thallium</p>
                     <p class="atomicWidth">204,38</p>
                 </div>
-                <div class="element">
-                    <p class="number">82</p>
-                    <h1 class="symbolElement">Pb</h1>
-                    <p class="nameElement">Lead</p>
-                    <p class="atomicWidth">207,2</p>
-                </div>
-                <div class="element">
-                    <p class="number">83</p>
-                    <h1 class="symbolElement">Bi</h1>
-                    <p class="nameElement">Bismuth</p>
-                    <p class="atomicWidth">208,98</p>
-                </div>
-                <div class="element">
+                <div class="element lightgreen">
                     <p class="number">113</p>
                     <h1 class="symbolElement">Uut</h1>
                     <p class="nameElement">Ununtrium</p>
                     <p class="atomicWidth">(284)</p>
                 </div>
-                <div class="element">
+            </div>
+            <div class="col-5">
+                <div class="element pink">
+                    <p class="number">6</p>
+                    <h1 class="symbolElement">C</h1>
+                    <p class="nameElement">Carbon</p>
+                    <p class="atomicWidth">12,011</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">14</p>
+                    <h1 class="symbolElement">Si</h1>
+                    <p class="nameElement">Silcon</p>
+                    <p class="atomicWidth">28,085</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">32</p>
+                    <h1 class="symbolElement">Ge</h1>
+                    <p class="nameElement">Germanium</p>
+                    <p class="atomicWidth">72,63</p>
+                </div>
+                <div class="element lightgreen">
+                    <p class="number">50</p>
+                    <h1 class="symbolElement">Sn</h1>
+                    <p class="nameElement">Tin</p>
+                    <p class="atomicWidth">118,710</p>
+                </div>
+                <div class="element lightgreen">
+                    <p class="number">82</p>
+                    <h1 class="symbolElement">Pb</h1>
+                    <p class="nameElement">Lead</p>
+                    <p class="atomicWidth">207,2</p>
+                </div>
+                <div class="element lightgreen">
                     <p class="number">114</p>
                     <h1 class="symbolElement">Fl</h1>
                     <p class="nameElement">Flerovium</p>
                     <p class="atomicWidth">(289)</p>
                 </div>
-                <div class="element">
+            </div>
+            <div class="col-6">
+                <div class="element pink">
+                    <p class="number">7</p>
+                    <h1 class="symbolElement">N</h1>
+                    <p class="nameElement">Nitrogen</p>
+                    <p class="atomicWidth">14,007</p>
+                </div>
+                <div class="element pink">
+                    <p class="number">15</p>
+                    <h1 class="symbolElement">P</h1>
+                    <p class="nameElement">Phosphorus</p>
+                    <p class="atomicWidth">30,974</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">33</p>
+                    <h1 class="symbolElement">As</h1>
+                    <p class="nameElement">Arsenic</p>
+                    <p class="atomicWidth">74,921</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">51</p>
+                    <h1 class="symbolElement">Sb</h1>
+                    <p class="nameElement">Antimony</p>
+                    <p class="atomicWidth">121,760</p>
+                </div>
+                <div class="element lightgreen">
+                    <p class="number">83</p>
+                    <h1 class="symbolElement">Bi</h1>
+                    <p class="nameElement">Bismuth</p>
+                    <p class="atomicWidth">208,98</p>
+                </div>
+                <div class="element lightgreen">
                     <p class="number">115</p>
                     <h1 class="symbolElement">Uup</h1>
                     <p class="nameElement">Ununpentium</p>
                     <p class="atomicWidth">(288)</p>
                 </div>
-                <div class="element">
+            </div>
+            <div class="col-7">
+                <div class="element pink">
+                    <p class="number">8</p>
+                    <h1 class="symbolElement">O</h1>
+                    <p class="nameElement">Oxygen</p>
+                    <p class="atomicWidth">15,999</p>
+                </div>
+                <div class="element pink">
+                    <p class="number">16</p>
+                    <h1 class="symbolElement">S</h1>
+                    <p class="nameElement">Sulfur</p>
+                    <p class="atomicWidth">32,066</p>
+                </div>
+                <div class="element pink">
+                    <p class="number">34</p>
+                    <h1 class="symbolElement">Se</h1>
+                    <p class="nameElement">Selenium</p>
+                    <p class="atomicWidth">78,971</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">52</p>
+                    <h1 class="symbolElement">Te</h1>
+                    <p class="nameElement">Tellurium</p>
+                    <p class="atomicWidth">127,60</p>
+                </div>
+                <div class="element darkgreen">
+                    <p class="number">84</p>
+                    <h1 class="symbolElement">Po</h1>
+                    <p class="nameElement">Polonium</p>
+                    <p class="atomicWidth">(209)</p>
+                </div>
+                <div class="element lightgreen">
                     <p class="number">116</p>
                     <h1 class="symbolElement">Lv</h1>
                     <p class="nameElement">Livermorium</p>
                     <p class="atomicWidth">(293)</p>
                 </div>
             </div>
-            <div class="noble-gas">
+            <div class="col-8">
+                <div class="element">
+                    <p class="number">9</p>
+                    <h1 class="symbolElement">F</h1>
+                    <p class="nameElement">Fluorine</p>
+                    <p class="atomicWidth">18,998</p>
+                </div>
+                <div class="element">
+                    <p class="number">17</p>
+                    <h1 class="symbolElement">Cl</h1>
+                    <p class="nameElement">Chlorine</p>
+                    <p class="atomicWidth">35,45</p>
+                </div>
+                <div class="element">
+                    <p class="number">35</p>
+                    <h1 class="symbolElement">Br</h1>
+                    <p class="nameElement">Bromine</p>
+                    <p class="atomicWidth">79,904</p>
+                </div>
+                <div class="element">
+                    <p class="number">53</p>
+                    <h1 class="symbolElement">I</h1>
+                    <p class="nameElement">Iodine</p>
+                    <p class="atomicWidth">126,904</p>
+                </div>
+                <div class="element">
+                    <p class="number">85</p>
+                    <h1 class="symbolElement">At</h1>
+                    <p class="nameElement">Astatine</p>
+                    <p class="atomicWidth">(210)</p>
+                </div>
+                <div class="element">
+                    <p class="number">117</p>
+                    <h1 class="symbolElement">Ts</h1>
+                    <p class="nameElement">Tennesine</p>
+                    <p class="atomicWidth">(294)</p>
+                </div>
+            </div>
+            <div class="col-9">
                 <div class="element">
                     <p class="number">2</p>
                     <h1 class="symbolElement">He</h1>
@@ -557,196 +575,192 @@
                     <p class="atomicWidth">(294)</p>
                 </div>
             </div>
-            <div class="Lanth-actin">
-                <div class="element">
-                    <p class="number-elem">57-71</p>
-                    <p class="nameElem">Lanthanoid</p>
-                </div>
-                <div class="element">
-                    <p class="number-elem">89-103</p>
-                    <p class="nameElem">Actinide</p>
-                </div>
-            </div>
         </div>
         <div class="footer-elements">
-            <div class="lanthanoid">
+            <div class="row-1">
                 <div class="element">
+                    <p>Lanthanoid</p>
+                </div>
+                <div class="element aqua">
                     <p class="number">57</p>
                     <h1 class="symbolElement">La</h1>
                     <p class="nameElement">Lanthanum</p>
                     <p class="atomicWidth">138,905</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">58</p>
                     <h1 class="symbolElement">Ce</h1>
                     <p class="nameElement">Cerium</p>
                     <p class="atomicWidth">140,116</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">59</p>
                     <h1 class="symbolElement">Pr</h1>
                     <p class="nameElement">Praseodymium</p>
                     <p class="atomicWidth">140,907</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">60</p>
                     <h1 class="symbolElement">Nd</h1>
                     <p class="nameElement">Neodymium</p>
                     <p class="atomicWidth">144,242</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">61</p>
                     <h1 class="symbolElement">Pm</h1>
                     <p class="nameElement">Promethium</p>
                     <p class="atomicWidth">(145)</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">62</p>
                     <h1 class="symbolElement">Sm</h1>
                     <p class="nameElement">Samarium</p>
                     <p class="atomicWidth">150,36</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">63</p>
                     <h1 class="symbolElement">Eu</h1>
                     <p class="nameElement">Europium</p>
                     <p class="atomicWidth">151,964</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">64</p>
                     <h1 class="symbolElement">Gd</h1>
                     <p class="nameElement">Gadolinium</p>
                     <p class="atomicWidth">157,25</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">65</p>
                     <h1 class="symbolElement">Tb</h1>
                     <p class="nameElement">Terbium</p>
                     <p class="atomicWidth">158,925</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">66</p>
                     <h1 class="symbolElement">Dy</h1>
                     <p class="nameElement">Dysperosium</p>
                     <p class="atomicWidth">162,5</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">67</p>
                     <h1 class="symbolElement">Ho</h1>
                     <p class="nameElement">Holmium</p>
                     <p class="atomicWidth">164,9303</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">68</p>
                     <h1 class="symbolElement">Er</h1>
                     <p class="nameElement">Erbium</p>
                     <p class="atomicWidth">167,259</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">69</p>
                     <h1 class="symbolElement">Tm</h1>
                     <p class="nameElement">Thulium</p>
                     <p class="atomicWidth">168,934</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">70</p>
                     <h1 class="symbolElement">Yb</h1>
                     <p class="nameElement">Ytterbium</p>
                     <p class="atomicWidth">173,045</p>
                 </div>
-                <div class="element">
+                <div class="element aqua">
                     <p class="number">71</p>
                     <h1 class="symbolElement">Lu</h1>
                     <p class="nameElement">Lutetium</p>
                     <p class="atomicWidth">174,966</p>
                 </div>
             </div>
-            <div class="actinoid">
+            <div class="row-2">
                 <div class="element">
+                    <p>Actinide</p>
+                </div>
+                <div class="element turquoise">
                     <p class="number">89</p>
                     <h1 class="symbolElement">Ac</h1>
                     <p class="nameElement">Actinium</p>
                     <p class="atomicWidth">(227)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">90</p>
                     <h1 class="symbolElement">Th</h1>
                     <p class="nameElement">Thorium</p>
                     <p class="atomicWidth">232,037</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">91</p>
                     <h1 class="symbolElement">Pa</h1>
                     <p class="nameElement">Protactinium</p>
                     <p class="atomicWidth">231,035</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">92</p>
                     <h1 class="symbolElement">U</h1>
                     <p class="nameElement">Uranium</p>
                     <p class="atomicWidth">238,028</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">93</p>
                     <h1 class="symbolElement">Np</h1>
                     <p class="nameElement">Neptunium</p>
                     <p class="atomicWidth">(237)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">94</p>
                     <h1 class="symbolElement">Pu</h1>
                     <p class="nameElement">Plutonium</p>
                     <p class="atomicWidth">(224)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">95</p>
                     <h1 class="symbolElement">Am</h1>
                     <p class="nameElement">Americium</p>
                     <p class="atomicWidth">(243)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">96</p>
                     <h1 class="symbolElement">Cm</h1>
                     <p class="nameElement">Curium</p>
                     <p class="atomicWidth">(247)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">97</p>
                     <h1 class="symbolElement">Bk</h1>
                     <p class="nameElement">Berkelium</p>
                     <p class="atomicWidth">(247)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">98</p>
                     <h1 class="symbolElement">Cf</h1>
                     <p class="nameElement">Californium</p>
                     <p class="atomicWidth">(251)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">99</p>
                     <h1 class="symbolElement">Es</h1>
                     <p class="nameElement">Einsteinium</p>
                     <p class="atomicWidth">(252)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">100</p>
                     <h1 class="symbolElement">Fm</h1>
                     <p class="nameElement">Fermium</p>
                     <p class="atomicWidth">(257)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">101</p>
                     <h1 class="symbolElement">Md</h1>
                     <p class="nameElement">Mendelevium</p>
                     <p class="atomicWidth">(258)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">102</p>
                     <h1 class="symbolElement">No</h1>
                     <p class="nameElement">Nobelium</p>
                     <p class="atomicWidth">(259)</p>
                 </div>
-                <div class="element">
+                <div class="element turquoise">
                     <p class="number">103</p>
                     <h1 class="symbolElement">Lr</h1>
                     <p class="nameElement">Lawrencium</p>
@@ -755,6 +769,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
